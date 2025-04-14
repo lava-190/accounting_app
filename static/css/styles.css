@@ -1,0 +1,66 @@
+/* app/static/css/styles.css */
+
+/* Base Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    padding: 20px;
+    background: #007BFF;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Dark Mode Styling */
+  body.dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+  }
+  
+  /* Settings Bar Styling */
+  #settings-bar {
+    width: 250px;
+    background: #ddd;
+    padding: 15px;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+  
+  #settings-bar.collapsed {
+    transform: translateX(-260px);
+  }
+  
+  /* Table Styling */
+  table {
+    width: 90%;
+    margin: 100px auto;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  

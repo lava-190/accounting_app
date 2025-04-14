@@ -1,0 +1,57 @@
+<!-- app/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accounting Application</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Accounting Dashboard</h1>
+    <div id="grand-total">Grand Total: $0.00</div>
+    <button id="toggle-settings">Toggle Settings</button>
+    <button id="toggle-mode">Toggle Dark/Light Mode</button>
+  </header>
+
+  <!-- Collapsible Settings Bar -->
+  <aside id="settings-bar" class="collapsed">
+    <ul>
+      <li>
+        <label for="bg-color">Background Color: 
+          <input type="color" id="bg-color" name="bg-color">
+        </label>
+      </li>
+      <li>
+        <label for="language">Language: 
+          <select id="language" name="language">
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+          </select>
+        </label>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <table id="unit-table">
+      <thead>
+        <tr>
+          <th>Unit</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be populated dynamically using JavaScript -->
+      </tbody>
+    </table>
+    <button id="add-unit-btn">Add New Unit</button>
+  </main>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
